@@ -1,0 +1,38 @@
+.work_img {
+    position: relative;
+    overflow: hidden;
+}
+.work_box{
+    overflow:hidden;
+    position:relative;
+}
+.work_detail {
+    position: absolute;
+    width: 100%;
+    left: 0;
+	bottom:80%;
+	top:100%;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+    color: #fff;
+}
+.work_box:hover .work_detail {
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+.work_img:after {
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+left:0;
+padding: 20px;}
+
+.work_box:hover .work_img::after {
+    background: #00000096;
+	border-radius:10px;
+}
+

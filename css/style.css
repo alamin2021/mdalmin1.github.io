@@ -1,0 +1,535 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* AT FIRST STARTED PLUGIN CSS  */
+#scrollUp {
+            bottom: 20px;
+            right: 20px;
+            background-image:url(../images/top.png);
+            height: 38px;
+            width: 38px;
+        }
+
+
+
+/* PLUGIN CSS END ALL */
+body {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+.red{
+    background: red;
+}
+.light{
+    background: #ddd;
+}
+#header{
+    color: #fff;
+    background: #d4cdcc30;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+a:hover{
+    text-decoration:none;
+}
+ul#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: all 1s;
+    /*  text-align: center; */
+}
+
+ul#menu li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0;
+}
+
+ul#menu li a {
+    display: block;
+    padding: 8px 0px;
+    border-bottom: 1px solid #ddd;
+    color: white;
+    font-weight: 200;
+}
+
+ul#menu li a:hover {
+    background: #b18c8c;
+}
+.bar_button {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+section#home_section {
+    /* background-image: url(../images/picture1.jpg); */
+    color: white;
+    padding: 50px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: r;
+}
+
+.text-center.all_content {
+    position: relative;
+    line-height: 35px;
+    color: white;
+    z-index: 1;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.home_link.text-center a {
+    border: 1px solid #fff;
+    padding: 17px 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.home_link.text-center a:hover {
+    background: #fff;
+    transition: 1s;
+}
+.home_link.text-center {
+    display: block;
+    padding: 20px 0px;
+}
+section#home_section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section#home_section::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(../images/picture1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+section#home_section::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #00000099;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+.animation {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 45px;
+    border-radius: 20px 20px 10px 10px;
+    z-index: 1;
+    animation: bounce 1.5s infinite;
+}
+.animation::after {
+    content: "";
+    width: 3px;
+    height: 13px;
+    position: absolute;
+    /* top: 0; */
+    border: 2px solid #fff;
+    left: 47%;
+    right: 47%;
+    bottom: 0px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-50px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1.1)      translateY(-15px); }
+       /*  64%  { transform: scale(1,1)      translateY(0); } */
+        100% { transform: scale(1,1.2)      translateY(0); }
+}
+.btn2 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+span.typing {
+    color: #a4c7a5;
+    background: #5f9ea04a;
+    border-radius: 30px;
+}
+
+/* started optional css */
+
+#wraper{
+    display: inline-block;
+    border-radius: 500px;
+    position: relative;
+    /* cursor: pointer; */
+}
+
+.circle{
+    width: 47px;
+    height: 50px;
+    position: relative;
+}
+span.line {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.26,0.1,0.27,1.55)0.5s;
+}
+
+.top {
+    top: 18%;
+}
+
+.middle {
+    top: 48%;
+}
+
+.bottom {
+    top: 78%;
+}
+.circle.icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+}
+
+.circle.icon.close .middle, .circle.icon.close .bottom {
+    transform: rotate(-45deg);
+    top:48%;
+}
+.display{
+    display: block !important;
+    transform-origin: top;
+    transform: scaleX(1);
+    transition: all 1s;
+}
+.spiner {
+    width: 50px;
+    position: fixed;
+    top: 25%;
+    z-index: 1;
+    background: black;
+    color: white;
+    padding: 15px 40px 15px 25px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 25px;
+}
+.spiner i{
+    animation: spiner 1.5s linear infinite;
+}
+
+@keyframes spiner{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.show {
+    display: inline-block !important;
+    transition: all 1s;
+    transform: scale(1) !important;
+}
+.hide {
+    transform: scale(0);
+    transition: .5s;
+    opacity: 0;
+}
+
+
+/* -----------CLOSE ABOUT SECTION --------- */
+
+/* -------STARTED ABOUT SECTION  -------------- */
+section#about_section {
+    padding: 75px 0px;
+}
+.about_icon a i {
+    font-size: 20px;
+    padding: 11px 12px;
+    border: 1px solid #a29a9a;
+    border-radius: 100%;
+    margin: 0px 4px;
+    color: black;
+}
+.about_icon a i:hover {
+    border: 1px solid #b74545;
+    color: #b74545;
+    transition: .5s;
+}
+h3.ab_scnd span {
+    color: #ff33ad;
+}
+h1.ab_head {
+    font-weight: 400;
+    margin-bottom: 13px;
+    font-size: 36px;
+}
+
+.ab_paragraph p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8e7f7f;
+}
+
+.ab_paragraph {
+    padding-top: 7px;
+}
+i.fab.fa-facebook-f {
+    padding: 12px 16px;
+}
+
+
+/* ------------------  STARTED   -----  SERVICE SECTION------- */
+.service_design {
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 55px;
+    color: #ea4242;
+}
+
+.d_contnt {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #483b3b;
+}
+.col-md-4.p-4 {
+    border: 1px solid #968585;
+    border-radius: 8px;
+}
+.d_head {
+    padding-bottom: 10px;
+}
+section#service_section {
+    padding: 50px 0px;
+    background: #e6e5e54d;
+}
+
+
+
+
+/* ----------------STARTED PORTO FOLIO SECTION ___---_-_-_-___---__---_--__---_---_----- */
+section#port_folio {
+    /* height: 100vh; */
+    padding: 30px;
+    padding: 60px 0px;
+}
+
+
+.active{
+    background: #c12d2d;
+    transition: 1.5s;
+    animation-duration: 1.5s;
+    border-radius: 22px;
+}
+
+
+ul.list_port li a:hover {
+    background: #c12d2d;
+    transition: .5s;
+    animation-duration: .5s;
+}
+
+ul.list_port {
+    list-style: none;
+    position: relative;
+}
+
+ul.list_port li {
+    float: left;
+    margin: 0px 5px;
+    border-bottom: 1px solid blue;
+}
+
+ul.list_port li a {
+    padding: 8px 16px;
+    display: block;
+    border-radius: 22px;
+    color: black;
+}
+
+.image.col-md-4 {
+    padding: 10px;
+}
+.back_grnd {position: relative;overflow: hidden;}
+.back_grnd::after {
+    content: "";
+    height: 100%;
+    width: 92%;
+    position: absolute;
+    top: 7%;
+    bottom: 0;
+    left: 4%;
+    right: 0;
+    background: black;
+    transition: all 1s;
+    opacity: .6;
+    cursor: pointer;
+    transform: scaleY();
+    animation: opor .6s;
+    transform-origin: bottom;
+}
+@keyframes opor{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+      transform: scaleY(1);  
+    }
+}
+.image.col-4 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 19px;
+}
+.content {
+    /* position: absolute; */
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    z-index: 1;
+    display: none;
+    color: #e60a0a;
+    /* transform: scaleY(0); */
+    transform-origin: bottom;
+}
+
+.image :hover .content {
+   top: 50%;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+/* ------------------------------STARTED OPTIONAL CSS ------------------------ */
+
+.work_img {
+    position: relative;
+    overflow: hidden;
+}
+.work_img img {
+    height: 280px;
+    width: 100%;
+}
+.work_box{
+    overflow:hidden;
+    position:relative;
+}
+.work_detail {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:80%;
+    top:100%;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+    color: #fff;
+}
+.work_box:hover .work_detail {
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+.work_img:after {
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+left:0;
+padding: 20px;}
+
+.work_box:hover .work_img::after {
+    background: #00000096;
+    border-radius:10px;
+}
+a.img-zoom.col-4.no-gutters {
+    margin-top: 15px;
+}
+/* --------------------------------------------------first_port_design_complate ----------------------------------------------*/
+/* ----------------------------CONTACT SECTION STARTED ----------------------------------- */
+section#contact_section {
+    padding: 30px;
+    background: #ddd;
+    
+}
+div input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+input.Gender_btn {
+    width: 30px;
+}
+lavel {
+}
+
+lavel {
+    /* margin-bottom: 5px; */
+    display: block;
+    padding-top: 21px;
+    margin-bottom: -17px;
+}
+
+.Gender lavel {
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.Gender {
+    padding: 11px 0px;
+}
+.input_heading {
+    font-family: cursive;
+    font-weight: 400;
+    color: #0ba8f3;
+    font-size: 18px;
+}
+
+.input_heading h2 {
+    color: #bf2000;
+    font-size: 46px;
+    font-weight: 200;
+}
